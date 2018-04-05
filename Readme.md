@@ -1,13 +1,13 @@
-# Sentinel Test
+# Azure Functions Terraform sample
 
-This directory contains test environment for Sentinel. This directory enable us to create an test endpoint. 
+This is a sample script for deploying Azure Functions with Terraform.
 
 * terraform scripts
 * Azure Functions
 
 ## Terraform scripts
 
-Deploy FunctionApp for simulating Endpoints. This is the infrastructure deployment script written by Terraform.
+Deploy Function App with a function.
 
 Just download Terraform from [here](https://www.terraform.io/downloads.html) and set path to the binary. Then
 
@@ -40,9 +40,10 @@ function_app_name   = "YOUR_FUNCTIONAPP_NAME"
 ## Azure Functions
 
 Please deploy Azure Function from this repo. Then install it to the Function App.
+
 I want to automatically install using `Run-From-Zip` deployment with terraform. 
 
 * [TsuyoshiUshio/EndPoint](https://github.com/TsuyoshiUshio/EndPoint)
 
-However, `Run-From-Zip` is only limied for some regions, Now it is comment out now until it comes to your region. Until then, you can use `az` command execution instead. 
+However, `Run-From-Zip` is only limied for some regions, Now it is comment out now until it comes to your region. Until then, you can use `az` command execution instead. In this case, you can put your function with zipped with the name `function.zip`. 
 
